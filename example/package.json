@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14",
+    "remotedev-react-state": "file:..",
+    "todomvc-app-css": "^2.1.0"
+  },
+  "scripts": {
+    "build-module": "cd .. && npm run build && cd -",
+    "start": "npm run build-module && react-scripts start",
+    "build": "npm run build-module && react-scripts build",
+    "test": "npm run build-module && CI=1 react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

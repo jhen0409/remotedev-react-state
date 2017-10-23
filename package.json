@@ -1,0 +1,41 @@
+{
+  "name": "remotedev-react-state",
+  "version": "0.1.0",
+  "description":
+    "Inspecting / time travelling state changes of React component",
+  "repository": "jhen0409/remotedev-react-state",
+  "author": "Jhen <developer@jhen.me>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "redux-devtools",
+    "redux-devtools-extension",
+    "remotedev",
+    "react-native-debugger"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest __tests__",
+    "build": "babel --out-dir lib --ignore __tests__ src",
+    "example-test": "cd example && yarn && yarn build && yarn test && cd -",
+    "prepublish": "yarn lint && yarn test && yarn build && yarn example-test"
+  },
+  "dependencies": {
+    "remotedev": "^0.2.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

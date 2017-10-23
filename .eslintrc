@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["react", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "semi": 0,
+    "prefer-reflect": 0,
+    "react/sort-comp": 0
+  }
+}
