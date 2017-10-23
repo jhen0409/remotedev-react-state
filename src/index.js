@@ -7,7 +7,7 @@ function getActionName(actionName, state) {
   return actionName
 }
 
-module.exports = function connectToDevTools(instance, options = {}) {
+function connectToDevTools(instance, options = {}) {
   if (!instance) {
     console.error(
       'Please provide react instance as argument of `remotedev-react-state`.'
@@ -61,3 +61,13 @@ module.exports = function connectToDevTools(instance, options = {}) {
     originCWUM.call(instance)
   }
 }
+
+/**
+ * Create `connectToDevTools` function can be used for component `ref` prop.
+ * 
+ * Example:
+ *   <App ref={connectToDevTools.ref(options)} />
+ */
+connectToDevTools.ref = options => ref => connectToDevTools(ref, options)
+
+module.exports = connectToDevTools

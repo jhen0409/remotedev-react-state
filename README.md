@@ -29,6 +29,16 @@ See [the example](example/src/components/App.js#L24-L27).
   - `name`: String - Name of devtools instance, `Component - {display name}` by default.
   - `actionName`: String | Function - The action name will be displayed on devtools, you could use `function(state)` for return action name. `State change` by default.
 
+#### connectToDevTools.ref(options)
+
+Create `connectToDevTools` function can be used for component `ref` prop.
+
+Example:
+
+```js
+<App ref={connectToDevTools.ref(/* options */)} />
+```
+
 If you haven't `redux-devtools-extension` on your environment (Any react renderer that not on Chrome/Firefox/Electron/React Native Debugger), it will use the remote API of [remotedev](https://github.com/zalmoxisus/remotedev#communicate-via-local-server).
 
 ## TODO
