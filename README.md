@@ -1,4 +1,4 @@
-# remotedev-react-state [![Build Status](https://travis-ci.org/jhen0409/remotedev-react-state.svg?branch=master)](https://travis-ci.org/jhen0409/remotedev-react-state) [![NPM version](http://img.shields.io/npm/v/remotedev-react-state.svg?style=flat)](https://www.npmjs.com/package/remotedev-react-state)
+# remotedev-react-state [![Build Status](https://travis-ci.org/jhen0409/remotedev-react-state.svg?branch=master)](https://travis-ci.org/jhen0409/remotedev-react-state) [![NPM version](http://img.shields.io/npm/v/remotedev-react-state.svg?style=flat)](https://www.npmjs.com/package/remotedev-react-state) [![Greenkeeper badge](https://badges.greenkeeper.io/jhen0409/remotedev-react-state.svg)](https://greenkeeper.io/)
 
 Inspecting / time travelling state changes of React component on [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) or [React Native Debugger](https://github.com/jhen0409/react-native-debugger), inspired by the article - [Redux DevTools without Redux](https://medium.com/@zalmoxis/redux-devtools-without-redux-or-how-to-have-a-predictable-state-with-any-architecture-61c5f5a7716f), make it as simple util.
 
