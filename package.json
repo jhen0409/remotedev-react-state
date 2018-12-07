@@ -22,7 +22,7 @@
     "prepublish": "yarn lint && yarn test && yarn build && yarn example-test"
   },
   "dependencies": {
-    "remotedev": "^0.2.7"
+    "remotedev": "^0.2.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
