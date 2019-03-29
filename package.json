@@ -36,6 +36,6 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^22.0.0",
     "react": "^16.8.6",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.8.6"
   }
 }
